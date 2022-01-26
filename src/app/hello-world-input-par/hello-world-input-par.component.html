@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm"><label for="fnumber">Introduce un número:</label></div>
+    <div class="col-sm-8">
+      <input type="number" [(ngModel)]="inputNumber" />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <button type="button" (click)="clear()">Clear</button>
+    </div>
+    <div class="col-sm">
+      <div *ngIf="resultVisible">
+        <div *ngIf="isPar; else noEdit">
+          <p class="text-md-left">Es par</p>
+        </div>
+        <ng-template #noEdit>
+          <p class="text-md-left">No es par</p>
+        </ng-template>
+      </div>
+    </div>
+    <div class="col-sm">
+      <button type="button" (click)="buttonClick()">Submit</button>
+    </div>
+  </div>
+</div>

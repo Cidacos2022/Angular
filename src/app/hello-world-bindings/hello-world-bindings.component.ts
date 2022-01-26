@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 export class HelloWorldBindingsComponent {
   fontColor = 'blue';
   sayHelloId = 1;
-  canClick = false;
-  message = 'Hello, World';
+  isDisabled = false;
+  message = 'Aupa chavalaes';
 
   sayMessage() {
     alert(this.message);

@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './hello-world-interpolation.component.html'
 })
 export class HelloWorldInterpolationComponent {
-    message = 'Hello, World!';
+    message = 'jodo!';
 }

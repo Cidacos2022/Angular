@@ -8,8 +8,11 @@ import { HelloWorldNgIfComponent } from './hello-world-ngif/hello-world-ngif.com
 import { HelloWorldDependencyInjectionComponent } from './hello-world-di/hello-world-di.component';
 import { HelloWorldInterpolationComponent } from './hello-world-interpolation/hello-world-interpolation.component';
 import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-bindings.component';
-
-
+import { HelloWorldPipesComponent } from './hello-world-pipes/hello-world-pipes.component';
+import { HelloWorldInputBindingComponent } from './hello-world-input-binding/hello-world-input-binding.component';
+import { HelloWorldInputParComponent } from './hello-world-input-par/hello-world-input-par.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,13 @@ import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-
     HelloWorldNgIfComponent,
     HelloWorldDependencyInjectionComponent,
     HelloWorldInterpolationComponent,
-    HelloWorldBindingsComponent
+    HelloWorldBindingsComponent,
+    HelloWorldPipesComponent,
+    HelloWorldInputBindingComponent,
+    HelloWorldInputParComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, NgbModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
