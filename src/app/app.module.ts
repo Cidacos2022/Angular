@@ -13,15 +13,9 @@ import { HelloWorldInputBindingComponent } from './hello-world-input-binding/hel
 import { HelloWorldInputParComponent } from './hello-world-input-par/hello-world-input-par.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing-module/app.routing-module';
 
-const routes: Routes = [
-  { path: 'hello-world', component: HelloWorldComponent },
-  {
-    path: 'input',
-    component: HelloWorldInputBindingComponent,
-  },
-];
+
 
 @NgModule({
   declarations: [
@@ -39,8 +33,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     NgbModule,
+    AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent],
