@@ -12,10 +12,10 @@ import { HelloWorldPipesComponent } from './hello-world-pipes/hello-world-pipes.
 import { HelloWorldInputBindingComponent } from './hello-world-input-binding/hello-world-input-binding.component';
 import { HelloWorldInputParComponent } from './hello-world-input-par/hello-world-input-par.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing-module/app.routing-module';
-
-
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { NameEditorComponent } from './name-editor/name-editor.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +29,15 @@ import { AppRoutingModule } from './app-routing-module/app.routing-module';
     HelloWorldPipesComponent,
     HelloWorldInputBindingComponent,
     HelloWorldInputParComponent,
+    ProfileEditorComponent,
+    NameEditorComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
