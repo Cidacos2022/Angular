@@ -4,6 +4,7 @@ import { HelloWorldInputParComponent } from '../hello-world-input-par/hello-worl
 import { HelloWorldPipesComponent } from '../hello-world-pipes/hello-world-pipes.component';
 import { HelloWorldComponent } from '../hello-world/hello-world.component';
 import { NameEditorComponent } from '../name-editor/name-editor.component';
+import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { ProfileEditorComponent } from '../profile-editor/profile-editor.component';
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileEditorComponent,
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 

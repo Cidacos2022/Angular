@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing-module/app.routing-module';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { NameEditorComponent } from './name-editor/name-editor.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NameEditorComponent } from './name-editor/name-editor.component';
     HelloWorldInputParComponent,
     ProfileEditorComponent,
     NameEditorComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
