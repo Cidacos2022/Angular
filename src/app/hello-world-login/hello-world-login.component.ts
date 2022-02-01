@@ -9,6 +9,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class HelloWorldLoginComponent implements OnInit {
   isOk: boolean | null;
 
+  isAnnieOk: boolean | null;
+
   login = this.fb.group({
     name: ['', Validators.required],
     password: ['', Validators.required],
@@ -16,6 +18,7 @@ export class HelloWorldLoginComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.isOk = null;
+    this.isAnnieOk = true;
   }
 
   onSubmit() {
