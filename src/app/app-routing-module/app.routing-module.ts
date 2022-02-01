@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HelloWorldInputParComponent } from '../hello-world-input-par/hello-world-input-par.component';
+import { HelloWorldLoginComponent } from '../hello-world-login/hello-world-login.component';
 import { HelloWorldPipesComponent } from '../hello-world-pipes/hello-world-pipes.component';
 import { HelloWorldComponent } from '../hello-world/hello-world.component';
 import { NameEditorComponent } from '../name-editor/name-editor.component';
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileEditorComponent,
+  },
+  {
+    path: 'login',
+    component: HelloWorldLoginComponent,
   },
   {
     path: '**',

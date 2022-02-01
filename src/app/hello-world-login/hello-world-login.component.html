@@ -1,0 +1,10 @@
+<form [formGroup]="login" (ngSubmit)="onSubmit()">
+  <label for="first-name">First Name: </label>
+  <input id="first-name" type="text" formControlName="name" required />
+
+  <label for="last-name">Last Name: </label>
+  <input id="last-name" type="text" formControlName="password" required />
+
+  <button type="submit" [disabled]="!login.valid">Submit</button>
+</form>
+<div *ngIf="this.isOk != null">{{ this.isOk ? "OK" : "KO" }}</div>

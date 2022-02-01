@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing-module/app.routing-module';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HelloWorldLoginComponent } from './hello-world-login/hello-world-login.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProfileEditorComponent,
     NameEditorComponent,
     PageNotFoundComponent,
+    HelloWorldLoginComponent,
   ],
   imports: [
     BrowserModule,
