@@ -19,6 +19,8 @@ import { NameEditorComponent } from './name-editor/name-editor.component';
 import { HelloWorldParentComponent } from './hello-world-parent/hello-world-parent.component';
 import { HelloWorldChildComponent } from './hello-world-child/hello-world-child.component';
 import { HelloWorldDataFromUrlComponent } from './hello-world-data-from-url/hello-world-data-from-url.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HelloWorldLoginComponent } from './hello-world-login/hello-world-login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { HelloWorldDataFromUrlComponent } from './hello-world-data-from-url/hell
     HelloWorldParentComponent,
     HelloWorldChildComponent,
     HelloWorldDataFromUrlComponent,
+    PageNotFoundComponent,
+    HelloWorldLoginComponent,
   ],
   imports: [
     BrowserModule,
