@@ -1,0 +1,9 @@
+<label for="item-contador">Valor escrito componente hijo:</label>
+<input type="text"  id='item-contador' [formControl]='currentItemEmited' [readonly]='true'>
+<label for="nuevoId">Lo que escribas aquí se mostrará en el hijo:</label>
+<input type="text" id='nuevoId' [formControl]='currentItem'>
+
+
+<div style="background-color: darkgray;">
+  <app-hello-world-child [item]="currentItem.value" (emitItemEvent)='setItem($event)'></app-hello-world-child>
+</div>

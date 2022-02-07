@@ -1,0 +1,6 @@
+<p>
+  Today's item: {{item}}
+</p>
+<label for='textVlue' >Este el texto que se va a emitir al componente padre</label>
+<input type="text" id='textVlue' [formControl]='textValue'>
+<button type="button" (click)='emitValue(textValue.value)'></button>

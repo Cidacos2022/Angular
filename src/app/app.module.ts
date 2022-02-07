@@ -16,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing-module/app.routing-module';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { NameEditorComponent } from './name-editor/name-editor.component';
+import { HelloWorldParentComponent } from './hello-world-parent/hello-world-parent.component';
+import { HelloWorldChildComponent } from './hello-world-child/hello-world-child.component';
+import { HelloWorldDataFromUrlComponent } from './hello-world-data-from-url/hello-world-data-from-url.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { NameEditorComponent } from './name-editor/name-editor.component';
     HelloWorldInputParComponent,
     ProfileEditorComponent,
     NameEditorComponent,
+    HelloWorldParentComponent,
+    HelloWorldChildComponent,
+    HelloWorldDataFromUrlComponent,
   ],
   imports: [
     BrowserModule,
