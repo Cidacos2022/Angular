@@ -1,0 +1,9 @@
+<label for="idReadOnly">Dato que viene del hijo</label>
+<input
+  type="text"
+  id="idReadOnly"
+  [readonly]="true"
+  [formControl]="valueChild"
+/>
+
+<app-child-base (eventoClickButton)="setItem($event)"></app-child-base>
