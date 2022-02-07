@@ -21,6 +21,7 @@ import { HelloWorldChildComponent } from './hello-world-child/hello-world-child.
 import { HelloWorldDataFromUrlComponent } from './hello-world-data-from-url/hello-world-data-from-url.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HelloWorldLoginComponent } from './hello-world-login/hello-world-login.component';
+import { HelloWorldForComponent } from './hello-world-for/hello-world-for.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HelloWorldLoginComponent } from './hello-world-login/hello-world-login.
     HelloWorldDataFromUrlComponent,
     PageNotFoundComponent,
     HelloWorldLoginComponent,
+    HelloWorldForComponent,
   ],
   imports: [
     BrowserModule,

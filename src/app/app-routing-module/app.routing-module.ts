@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HelloWorldDataFromUrlComponent } from '../hello-world-data-from-url/hello-world-data-from-url.component';
+import { HelloWorldForComponent } from '../hello-world-for/hello-world-for.component';
 import { HelloWorldInputParComponent } from '../hello-world-input-par/hello-world-input-par.component';
 import { HelloWorldLoginComponent } from '../hello-world-login/hello-world-login.component';
 import { HelloWorldParentComponent } from '../hello-world-parent/hello-world-parent.component';
@@ -33,12 +34,16 @@ const routes: Routes = [
     component: HelloWorldParentComponent,
   },
   {
-    path: 'url/:data',
+    path: 'url/:idProducto',
     component: HelloWorldDataFromUrlComponent,
   },
   {
     path: 'login',
     component: HelloWorldLoginComponent,
+  },
+  {
+    path: 'for',
+    component: HelloWorldForComponent,
   },
   {
     path: '**',
